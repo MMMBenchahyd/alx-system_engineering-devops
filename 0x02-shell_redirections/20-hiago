@@ -1,0 +1,2 @@
+#!/bin/bash
+echo "trcyiC CCggc" | tr -d "C" |tr -d "c"
