@@ -34,18 +34,19 @@ defaults
         errorfile 503 /etc/haproxy/errors/503.http
         errorfile 504 /etc/haproxy/errors/504.http
 
-frontend azarus-frontend
+frontend azaus-frontend
         bind *:80
         mode http
         http-request redirect scheme https code 301 unless { ssl_fc }
         http-request set-header X_Forwarded-Proto http
         default_backend azarus-backend
 
-frontend azarus-tech-frontend-https
-        bind *:443 ssl crt /etc/haproxy/certs/clickviral.tech.pem
+frontend azarus-frontend-https
+        bind *:443 ssl crt /etc/haproxy/certs/www.azarus.tech.pem
         http-request set-header X-Forwarded-Proto https
         default_backend azarus-backend
-backend azarus-tech-backend
-    balance roundrobin
-    server 151666-web-01 18.207.3.171:80 check
-    server 151666-web-02 52.86.160.15:80 check
+
+backend azarus-backend
+        balance roundrobin
+        server 151666-web-01 18.207.3.171:80 check
+        server 151666-web-02 52.86.160.15:80 check
