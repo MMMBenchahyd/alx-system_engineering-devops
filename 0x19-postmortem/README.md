@@ -10,15 +10,15 @@ Upon cloning our site's repository and attempting to reproduce the problem, we d
 
 ## Timeline
 
-+05-12-2024, 9:55 AM GMT+1: Initial customer complaint regarding sign-in issues.
-+05-12-2024, 10:20 AM GMT+1: Backend developer Winus experienced the same issue.
-+05-12-2024, 10:35 AM GMT+1: Investigation into controller and view inconsistencies commenced.
-+05-12-2024, 10:40 AM GMT+1: Suspicions arose around the bcrypt gem, a site dependency.
-+05-12-2024, 10:42 AM GMT+1: Verification of form field bindings in views.
-+05-12-2024, 10:45 AM GMT+1: Controller hash generation under scrutiny.
-+05-12-2024, 10:50 AM GMT+1: Speculation on password hashing accuracy.
-+05-12-2024, 11:00 AM GMT+1: Incident escalated to the backend development team.
-+05-12-2024, 11:20 AM GMT+1: Resolution through bcrypt gem version update.
++ 05-12-2024, 9:55 AM GMT+1: Initial customer complaint regarding sign-in issues.
++ 05-12-2024, 10:20 AM GMT+1: Backend developer Winus experienced the same issue.
++ 05-12-2024, 10:35 AM GMT+1: Investigation into controller and view inconsistencies commenced.
++ 05-12-2024, 10:40 AM GMT+1: Suspicions arose around the bcrypt gem, a site dependency.
++ 05-12-2024, 10:42 AM GMT+1: Verification of form field bindings in views.
++ 05-12-2024, 10:45 AM GMT+1: Controller hash generation under scrutiny.
++ 05-12-2024, 10:50 AM GMT+1: Speculation on password hashing accuracy.
++ 05-12-2024, 11:00 AM GMT+1: Incident escalated to the backend development team.
++ 05-12-2024, 11:20 AM GMT+1: Resolution through bcrypt gem version update.
 
 ## Root Cause And Resolution
 
